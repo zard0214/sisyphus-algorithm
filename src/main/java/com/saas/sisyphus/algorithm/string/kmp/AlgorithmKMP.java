@@ -26,7 +26,7 @@ public class AlgorithmKMP {
                 j++;
             }
             if (j == P) {
-                System.out.println("Found pattern "
+                System.out.println(" Found pattern "
                         + "at index " + (i - j));
                 j = lsp[j - 1];
             } else if (txt.charAt(i) != pat.charAt(j)
@@ -58,7 +58,7 @@ public class AlgorithmKMP {
             }
         }
         for (int k = 0; k < lsp.length; k++) {
-            System.out.print(lsp[k]);
+            System.out.println(lsp[k]);
         }
     }
     public static class Solution {
@@ -76,7 +76,7 @@ public class AlgorithmKMP {
                     j++;
                 }
                 if (j == P) {
-                    System.out.println("Found pattern "
+                    System.out.println(" Found pattern "
                             + "at index " + (i - j));
                     j = lsp[j - 1];
                 } else if (txt.charAt(i) != pat.charAt(j)
